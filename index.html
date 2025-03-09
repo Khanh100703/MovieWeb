@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Flix | Movie web</title>
+
+     <link rel="shortcut icon" href="./assets/img/Images/logo-foursquare.svg">
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="./assets/component.css">
+     <link rel="stylesheet" href="./assets/style.css">
+     <link rel="stylesheet" href="./assets/grid.css">
+
+     <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+     <!-- LINK CAROUSEL -->
+     <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+
+     <!-- BOX ICON  -->
+     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/css/all.min.css">
+     <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+     <!-- NAV -->
+
+     <div class="menu-tablet" id="menu-tablet">
+          <ul class="menu-tb-list">
+               <li><a href="#">
+                         TRANG CHỦ
+                    </a></li>
+               <li><a href="#">
+                         PHIM LẺ
+                    </a></li>
+               <li><a href="#">
+                         PHIM HOẠT HÌNH
+                    </a></li>
+               <li><a href="#">
+                         YÊU THÍCH
+                    </a></li>
+               <li><a href="#">
+                         NỔI BẬT
+                    </a></li>
+
+          </ul>
+     </div>
+
+
+     <div class="navigation">
+          <ul>
+               <li class="item active">
+                    <a>
+                         <span class="icon"><i class='bx bx-home-circle'></i></span>
+                         <span class="text">TRANG CHỦ</span>
+                    </a>
+               </li>
+
+
+               <li class="item">
+                    <a>
+                         <span class="icon"><ion-icon name="film-outline"></ion-icon></span>
+                         <span class="text">PHIM LẺ</span>
+                    </a>
+               </li>
+
+               <li class="item">
+                    <a>
+                         <span class="icon"><ion-icon name="tv-outline"></ion-icon></i></span>
+                         <span class="text">PHIM HOẠT HÌNH</span>
+                    </a>
+               </li>
+
+               <li class="item">
+                    <a>
+                         <span class="icon"><i class='hot-outline'></i></span>
+                         <span class="text">NỔI BẬT</span>
+                    </a>
+               </li>
+
+               <li class="item">
+                    <a>
+                         <span class="icon"><i class='favotire-outline'></i></span>
+                         <span class="text">YÊU THÍCH</span>
+                    </a>
+               </li>
+
+
+               <div class="indicator"></div>
+          </ul>
+     </div>
+
+
+     <div class="progress-bar" id="progress-bar">
+          <a href="#" id="progress-val">
+               <ion-icon name="logo-foursquare"></ion-icon>
+          </a>
+     </div>
+
+     <div class="container">
+          <div class="nav">
+               <a href="#" class="logo">
+                    <i style="margin-right: 10px;" class='bx bx-movie-play bx-tada main-color'></i>Fl<span
+                         class="main-color">i</span>x
+               </a>
+
+               <form action="" class="search-box">
+                    <input type="text" name="search" placeholder="Search Your Movie ....." class="nav-search">
+                    <button type="#" class="search-btn">
+                         <i class='bx bx-search-alt'></i>
+                    </button>
+               </form>
+
+               <div class="nav-sign">
+                    <ul class="auth-links">
+                         <li><a id="login-btn" href="LoginPage.html" class="btn btn-hover">
+                                   <span>ĐĂNG NHẬP</span>
+                              </a></li>
+                    </ul>
+               </div>
+               <div class="menu-toggle">
+                    <ion-icon name="menu-outline" class="open"></ion-icon>
+                    <ion-icon name="close-outline" class="close"></ion-icon>
+
+
+               </div>
+          </div>
+     </div>
+
+
+     <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+               <li class="nav-item active">
+                    <a href="#">
+                         <span class="nav-icon"><ion-icon name="home-outline"></ion-icon></span>
+                         TRANG CHỦ
+                    </a>
+               </li>
+
+               <li class="nav-item">
+                    <a href="#latest-section">
+                         <span class="nav-icon"><ion-icon name="film-outline"></ion-icon></span>
+                         PHIM LẺ
+                    </a>
+               </li>
+               <li class="nav-item">
+                    <a href="#section-tv">
+                         <span class="nav-icon"><ion-icon name="tv-outline"></ion-icon></span>
+                         PHIM HOẠT HÌNH
+                    </a>
+               </li>
+               <li class="nav-item">
+                    <a href="#hot-section">
+                         <span class="nav-icon"><ion-icon name="flame-outline"></ion-icon></span>
+                         NỔI BẬT
+                    </a>
+               </li>
+               <li class="nav-item">
+                    <a href="#favorite-section">
+                         <span class="nav-icon"><ion-icon name="heart-outline"></ion-icon></span>
+                         YÊU THÍCH
+                    </a>
+               </li>
+
+
+          </ul>
+     </div>
+
+     <!--END NAV -->
+
+     <!-- SLIDE SECTION -->
+     <div class="big-section" id="big-section">
+          <!-- BIG SLIDES -->
+          <div class="slide-container" id="big-slider">
+
+               <div class="big-slide-item active">
+                    <img src="./assets/img/Images/p-2.jpg" alt="Poster">
+
+                    <div class="big-slide-item-content">
+                         <div class="item-content-wrapper">
+                              <div class="item-content-title">
+                                   Pirates of the Caribbean 5
+                              </div>
+
+                              <div class="movies-infors">
+                                   <div class="movies-infor">
+                                        <ion-icon name="bookmark-outline"></ion-icon>
+                                        <span>6.5</span>
+                                   </div>
+                                   <div class="movies-infor">
+                                        <ion-icon name="time-outline"></ion-icon>
+                                        <span>150 mins</span>
+                                   </div>
+                                   <div class="movies-infor">
+                                        <ion-icon name="cube-outline"></ion-icon>
+                                        <span>FHD VietSub</span>
+                                   </div>
+                              </div>
+
+                              <div class="item-content-description ">
+                                   "Cướp Biển Vùng Caribbean 5: Salazar Báo Thù" (2017) tiếp tục câu chuyện về thuyền
+                                   trưởng Jack
+                                   Sparrow trong cuộc phiêu lưu mới đầy kịch tính. Lần này, Jack phải đối mặt với một kẻ
+                                   thù nguy
+                                   hiểm từ quá khứ, thuyền trưởng Salazar và đội quân hải tặc ma quái của hắn.
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="play-movies">
+                         <div class="ring"></div>
+                         <a href="pirates.html">
+                              <i class='bx bxs-right-arrow'></i>
+                         </a>
+                         <div class="btn-watch">
+                              <span>watch movie</span>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="big-slide-item">
+                    <img src="./assets/img/Images/p-6.jpg" alt="Poster">
+
+                    <div class="big-slide-item-content">
+                         <div class="item-content-wrapper">
+                              <div class="item-content-title ">
+                                   black widow
+                              </div>
+
+                              <div class="movies-infors">
+                                   <div class="movies-infor">
+                                        <ion-icon name="bookmark-outline"></ion-icon>
+                                        <span>8.0</span>
+                                   </div>
+                                   <div class="movies-infor">
+                                        <ion-icon name="time-outline"></ion-icon>
+                                        <span>120 mins</span>
+                                   </div>
+                                   <div class="movies-infor">
+                                        <ion-icon name="cube-outline"></ion-icon>
+                                        <span>FHD</span>
+                                   </div>
+                              </div>
+
+                              <div class="item-content-description ">
+                                   Black Widow Góa phụ đen 2020 Black Widow kể về một cựu sát thủ được đào tạo bài bản
+                                   của KGB, cựu đặc vụ của SHIELD , và cựu thành viên của Avengers . Tên thật của cô là
+                                   Natalia Alianovna Romanoff cho đến khi cô thay đổi nó. Johansson nói rằng với bộ
+                                   phim, có "cơ hội khám phá Góa phụ như một người phụ nữ tự lập và tự mình đưa ra những
+                                   lựa chọn độc lập và chủ động, có lẽ là một lần trong đời ... cô ấy không phải lúc nào
+                                   cũng có khả năng đó.
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="play-movies ">
+                         <div class="ring"></div>
+                         <a href="blackwidow.html">
+                              <i class='bx bxs-right-arrow'></i>
+                         </a>
+                         <div class="btn-watch">
+                              <span>watch movie</span>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="big-slide-item">
+                    <img src="./assets/img/Images/transformer-banner.jpg" alt="Poster">
+
+                    <div class="big-slide-item-content">
+                         <div class="item-content-wrapper">
+                              <div class="item-content-title">
+                                   Transformers 4
+                              </div>
+
+                              <div class="movies-infors ">
+                                   <div class="movies-infor">
+                                        <ion-icon name="bookmark-outline"></ion-icon>
+                                        <span>9.5</span>
+                                   </div>
+                                   <div class="movies-infor">
+                                        <ion-icon name="time-outline"></ion-icon>
+                                        <span>160 mins</span>
+                                   </div>
+                                   <div class="movies-infor">
+                                        <ion-icon name="cube-outline"></ion-icon>
+                                        <span>FHD vietsub</span>
+                                   </div>
+                              </div>
+
+                              <div class="item-content-description  ">
+                                   "Robot Đại Chiến 4: Kỷ Nguyên Hủy Diệt" (2014) kể về Optimus Prime tập hợp lại
+                                   Autobots chống lại Dinobots và kẻ thù mới sau trận chiến ở Chicago. Phim tập trung
+                                   vào cuộc chiến thiện ác, hậu quả của việc tạo ra Transformers mới, và những pha hành
+                                   động mãn nhãn.
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="play-movies ">
+                         <div class="ring"></div>
+                         <a href="robot.html">
+                              <i class='bx bxs-right-arrow'></i>
+                         </a>
+                         <div class="btn-watch">
+                              <span>watch movie</span>
+                         </div>
+                    </div>
+               </div>
+
+
+
+               <ul class="slide-control">
+                    <li class="slide-prev">
+                         <ion-icon name="chevron-back-outline"></ion-icon>
+                    </li>
+
+                    <li class="slide-next">
+                         <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </li>
+               </ul>
+
+          </div>
+     </div>
+
+     <!--END SLIDE SECTION -->
+
+
+     <!-- LATEST SECTION -->
+     <div class="section" id="latest-section">
+          <div class="section-wrapper" id="section-wrapper">
+               <div class="section-header">
+                    Phim lẻ
+               </div>
+
+               <div class="movies-slide row">
+
+                    <a href="venom1.html" class="movie-item col-3-5  m-5 s-11 to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/post-1.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        Venom
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>6.7</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>112 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>FHD</span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-item-overlay">
+                         </div>
+                         <div class="movie-item-act">
+                              <i class='bx bxs-right-arrow'></i>
+
+                              <div>
+                                   <i class='bx bxs-share-alt'></i>
+                                   <i class='bx bxs-heart'></i>
+                                   <i class='bx bx-plus-medical'></i>
+                              </div>
+                         </div>
+
+                    </a>
+
+                    <a href="venom2.html" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/p-4.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        Venom 2: Let There Be Carnage
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>6.0</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>129 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>1080p</span>
+                                        </div>
+
+                                   </div>
+                              </div>
+                              <div class="movie-item-overlay">
+                              </div>
+                              <div class="movie-item-act">
+                                   <!-- <div class="ring"></div> -->
+                                   <i class='bx bxs-right-arrow'></i>
+
+
+                                   <div>
+                                        <i class='bx bxs-share-alt'></i>
+                                        <i class='bx bxs-heart'></i>
+                                        <i class='bx bx-plus-medical'></i>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </a>
+
+                    <a href="deadpool1.html" class="movie-item col-3-5 m-5 s-11  to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/deadpool1.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        Deadpool
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>8.0</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>108 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>HD vietsub</span>
+                                        </div>
+
+                                   </div>
+                              </div>
+
+                              <div class="movie-item-overlay"></div>
+
+                              <div class="movie-item-act">
+                                   <!-- <div class="ring"></div> -->
+                                   <i class='bx bxs-right-arrow'></i>
+
+                                   <div>
+                                        <i class='bx bxs-share-alt'></i>
+                                        <i class='bx bxs-heart'></i>
+                                        <i class='bx bx-plus-medical'></i>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </a>
+
+                    <a href="deadpool2.html" class="movie-item col-3-5 m-5 s-11  to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/p-5.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        Deadpool 2
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>7.7</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>100 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>HD vietsub</span>
+                                        </div>
+
+                                   </div>
+                              </div>
+
+                              <div class="movie-item-overlay"></div>
+
+                              <div class="movie-item-act">
+                                   <!-- <div class="ring"></div> -->
+                                   <i class='bx bxs-right-arrow'></i>
+
+                                   <div>
+                                        <i class='bx bxs-share-alt'></i>
+                                        <i class='bx bxs-heart'></i>
+                                        <i class='bx bx-plus-medical'></i>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </a>
+
+                    <a href="dune.html" class="movie-item col-3-5 m-5 s-11  to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/post-4.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        Dune
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>8.0</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>153 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>FHD vietsub</span>
+                                        </div>
+
+                                   </div>
+                              </div>
+
+                              <div class="movie-item-overlay"></div>
+
+                              <div class="movie-item-act">
+                                   <!-- <div class="ring"></div> -->
+                                   <i class='bx bxs-right-arrow'></i>
+
+                                   <div>
+                                        <i class='bx bxs-share-alt'></i>
+                                        <i class='bx bxs-heart'></i>
+                                        <i class='bx bx-plus-medical'></i>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </a>
+
+
+                    <a href="notimetodie.html" class="movie-item col-3-5 m-5 s-11  to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/post-6.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        No Time to Die
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>7.3</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>120 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>FHD</span>
+                                        </div>
+
+                                   </div>
+                              </div>
+
+                              <div class="movie-item-overlay"></div>
+
+                              <div class="movie-item-act">
+                                   <!-- <div class="ring"></div> -->
+                                   <i class='bx bxs-right-arrow'></i>
+
+                                   <div>
+                                        <i class='bx bxs-share-alt'></i>
+                                        <i class='bx bxs-heart'></i>
+                                        <i class='bx bx-plus-medical'></i>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </a>
+
+
+                    <div class="btn-load btn-load-tb">
+                         <span>load more</span>
+                    </div>
+
+               </div>
+
+
+
+          </div>
+     </div>
+
+     <!-- END LATEST SECTION -->
+
+     <!-- TV SERIES -->
+     <div class="section-tv" id="section-tv">
+          <div class="section-wrapper">
+               <div class="section-header">
+                    <span> phim hoạt hình</span>
+                    <!-- <div class="btn-load-2">
+                              <span>load more</span>
+                         </div> -->
+               </div>
+
+
+               <div class="movies-slide row" id="tv-slider">
+                    <a href="natra2.html" class="movie-item col-3-5  m-5 s-11 to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/natra2.webp" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        Na Tra 2
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>N/A</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>Trailer</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>HD Trailer</span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-item-overlay">
+                         </div>
+                         <div class="movie-item-act">
+                              <i class='bx bxs-right-arrow'></i>
+
+                              <div>
+                                   <i class='bx bxs-share-alt'></i>
+                                   <i class='bx bxs-heart'></i>
+                                   <i class='bx bx-plus-medical'></i>
+                              </div>
+                         </div>
+
+                    </a>
+
+                    <a href="moana2.html" class="movie-item col-3-5  m-5 s-11 to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/moana2.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        Moana 2
+
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>7.1</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>100 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>HD vietsub</span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-item-overlay">
+                         </div>
+                         <div class="movie-item-act">
+                              <i class='bx bxs-right-arrow'></i>
+
+                              <div>
+                                   <i class='bx bxs-share-alt'></i>
+                                   <i class='bx bxs-heart'></i>
+                                   <i class='bx bx-plus-medical'></i>
+                              </div>
+                         </div>
+
+                    </a>
+
+                    <a href="rumble.html" class="movie-item col-3-5  m-5 s-11 to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/post-8.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        Rumble
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>5.9</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>104 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>HD vietsub</span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-item-overlay">
+                         </div>
+                         <div class="movie-item-act">
+                              <i class='bx bxs-right-arrow'></i>
+
+                              <div>
+                                   <i class='bx bxs-share-alt'></i>
+                                   <i class='bx bxs-heart'></i>
+                                   <i class='bx bx-plus-medical'></i>
+                              </div>
+                         </div>
+
+                    </a>
+
+                    <a href="component.html" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/raya1.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        raya and the last dragon
+
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>7.3</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>107 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>FHD</span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-item-overlay">
+                         </div>
+                         <div class="movie-item-act">
+                              <!-- <div class="ring"></div> -->
+                              <i class='bx bxs-right-arrow'></i>
+
+                              <div>
+                                   <i class='bx bxs-share-alt'></i>
+                                   <i class='bx bxs-heart'></i>
+                                   <i class='bx bx-plus-medical'></i>
+                              </div>
+                         </div>
+
+                    </a>
+
+                    <a href="luca.html" class="movie-item col-3-5  m-5 s-11 to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/post-11.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        Luca
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>7.5</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>96 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>FHD vietsub</span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="movie-item-overlay">
+                         </div>
+                         <div class="movie-item-act">
+                              <i class='bx bxs-right-arrow'></i>
+
+                              <div>
+                                   <i class='bx bxs-share-alt'></i>
+                                   <i class='bx bxs-heart'></i>
+                                   <i class='bx bx-plus-medical'></i>
+                              </div>
+                         </div>
+
+                    </a>
+
+
+                    <a href="kecap4.html" class="movie-item col-3-5  m-5 s-11 to-top show-on-scroll">
+                         <div>
+                              <img src="./assets/img/Images/despicableme4.jpg" alt="" class="movie-item-img">
+                              <div class="movie-item-content">
+                                   <div class="movie-item-title">
+                                        Despicable Me 4
+                                   </div>
+
+                                   <div class="movies-infors-card">
+                                        <div class="movies-infor">
+                                             <ion-icon name="bookmark-outline"></ion-icon>
+                                             <span>6.4</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="time-outline"></ion-icon>
+                                             <span>94 mins</span>
+                                        </div>
+                                        <div class="movies-infor">
+                                             <ion-icon name="cube-outline"></ion-icon>
+                                             <span>HD vietsub</span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="movie-item-overlay">
+                         </div>
+
+                         <div class="movie-item-act">
+                              <i class='bx bxs-right-arrow'></i>
+
+                              <div>
+                                   <i class='bx bxs-share-alt'></i>
+                                   <i class='bx bxs-heart'></i>
+                                   <i class='bx bx-plus-medical'></i>
+                              </div>
+                         </div>
+
+                    </a>
+
+
+                    <div class="btn-load ">
+                         <span>load more</span>
+                    </div>
+
+               </div>
+          </div>
+     </div>
+     <!-- TV SERIES -->
+     <!-- SPECIAL MOVIES -->
+     <div class="special" id="hot-section">
+          <div class="section-wrapper">
+               <div class="section-header">
+                    nổi bật
+               </div>
+               <div class="big-slide-item special-movie active to-top show-on-scroll">
+                    <img src="./assets/img/Movie-Data/blackpanther/p3.jpg" alt="Poster">
+
+                    <div class="big-slide-item-content">
+                         <div class="item-content-wrapper">
+                              <div class="item-content-title ">
+                                   Black Panther 2
+                              </div>
+
+                              <div class="movies-infors">
+                                   <div class="movies-infor">
+                                        <ion-icon name="bookmark-outline"></ion-icon>
+                                        <span>7.2</span>
+                                   </div>
+                                   <div class="movies-infor">
+                                        <ion-icon name="time-outline"></ion-icon>
+                                        <span>161 mins</span>
+                                   </div>
+                                   <div class="movies-infor">
+                                        <ion-icon name="cube-outline"></ion-icon>
+                                        <span>FHD vietsub</span>
+                                   </div>
+                              </div>
+
+                              <div class="item-content-description ">
+                                   "Chiến binh Báo Đen 2: Wakanda Bất Diệt" tiếp tục khám phá thế giới Wakanda sau phần
+                                   phim đầu
+                                   tiên. Bộ phim đã thành công lớn tại phòng vé và sẽ được phát hành trên nền tảng
+                                   Disney+ sắp tới
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="play-movies ">
+                         <div class="ring"></div>
+                         <a href="blackpanther.html">
+                              <i class='bx bxs-right-arrow'></i>
+                         </a>
+                         <div class="btn-watch">
+                              <span>watch movie</span>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <div class="section" id="favorite-section">
+          <div class="section-wrapper">
+               <div class="section-header">
+                    <span>yêu thích</span>
+               </div>
+          </div>
+     </div>
+
+
+     <!--END SPECIAL MOVIES -->
+
+
+
+
+     <footer class="footer ">
+          <div class="section-wrapper">
+               <div class="row ">
+                    <div class="col-6 footer-header">
+                         <a href="#" class="logo">
+                              <i style="margin-right: 10px;" class='bx bx-movie-play bx-tada main-color'></i>Fl<span
+                                   class="main-color">i</span>x
+                         </a>
+
+                         <p class="description">
+                              Flix is an online platform that allows users to watch their favorite movies and TV shows
+                              with ease.
+                              We support subtitles, multiple servers, and a personalized experience.
+                         </p>
+                         <div class="social-list">
+                              <a href="https://www.facebook.com/khanh.ang.267684" target="_blank" class="social-item">
+                                   <i class="bx bxl-facebook"></i>
+                              </a>
+                              <a href="https://www.instagram.com/khanhdang.1723/" target="_blank" class="social-item">
+                                   <i class="bx bxl-instagram"></i>
+                              </a>
+                              <a href="#" class="social-item">
+                                   <i class="bx bxl-twitter"></i>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-12 footer-item">
+                         <div class="row">
+                              <div class="col-4 align-items-center">
+                                   <div class="content">
+                                        <p class="main-color" style="font-size: 1.2rem;"><b>Flix</b></p>
+                                        <ul class="footer-menu">
+                                             <li><a href="#"> About us</a></li>
+                                             <li><a href="#"> My profile</a></li>
+                                             <li><a href="#"> Pricing plans</a></li>
+                                             <li><a href="#"> Contacts</a></li>
+                                        </ul>
+                                   </div>
+                              </div>
+
+
+                              <div class="col-4 align-items-center">
+                                   <div class="content">
+                                        <p class="main-color" style="font-size: 1.2rem;"><b>Browse</b></p>
+                                        <ul class="footer-menu">
+                                             <li><a href="#">Live TV</a></li>
+                                             <li><a href="#">Live Movies</a></li>
+                                             <li><a href="#">Live Series</a></li>
+                                             <li><a href="#">Streaming Library</a></li>
+                                        </ul>
+                                   </div>
+                              </div>
+
+                              <div class="col-4 align-items-center">
+                                   <div class="content">
+                                        <p class="main-color" style="font-size: 1.2rem;"><b>Help</b></p>
+                                        <ul class="footer-menu">
+                                             <li><a href="#">Account & Billing</a></li>
+                                             <li><a href="#">Plans & Pricing</a></li>
+                                             <li><a href="#">Supported devices</a></li>
+                                             <li><a href="#">Accessibility</a></li>
+                                        </ul>
+                                   </div>
+                              </div>
+
+
+                         </div>
+                    </div>
+               </div>
+
+
+
+          </div>
+     </footer>
+
+
+     <script src="main.js"></script>
+</body>
+
+</html>
