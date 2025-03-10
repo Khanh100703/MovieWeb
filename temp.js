@@ -120,12 +120,21 @@ document.addEventListener("DOMContentLoaded", function () {
     let loggedInUser = localStorage.getItem("loggedInUser");
     let navSign = document.querySelector(".nav-sign");
 
-    if (navSign) { // Kiểm tra nếu có phần tử nav-sign trên trang
+    if (navSign) {
         if (loggedInUser) {
             navSign.innerHTML = `
-                <span>Xin chào, <strong>${loggedInUser}</strong></span>
-                <button id="logout-btn" style="background: none; color: #ff4500; border: none; cursor: pointer;">Đăng Xuất</button>
+                <div style="text-align: center;">
+                    <span>Xin chào, <strong>${loggedInUser}</strong></span>
+                    <div style="margin-top: 5px; flex-direction: column; gap: 5px;">
+                        <button id="change-password-btn" style="background: none; color: #ff4500; border: none; cursor: pointer;">Đổi Mật Khẩu</button>
+                        <button id="logout-btn" style="background: none; color: #ff4500; border: none; cursor: pointer;">Đăng Xuất</button>
+                    </div>
+                </div>
             `;
+
+            document.getElementById("change-password-btn").addEventListener("click", function () {
+                window.location.href = "changepassword.html";
+            });
 
             document.getElementById("logout-btn").addEventListener("click", function () {
                 localStorage.removeItem("loggedInUser");
